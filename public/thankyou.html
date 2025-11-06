@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - CodedgeAcademy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="thankyou-container">
+        <div class="thankyou-card">
+            <div class="success-icon">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9 12l2 2 4-4"></path>
+                </svg>
+            </div>
+            <h1 class="thankyou-title">Thank You for Enrolling!</h1>
+            <p class="thankyou-message">
+                We've received your enrollment request successfully. Our team will contact you within 24 hours 
+                to discuss the course details and next steps.
+            </p>
+            <div class="thankyou-info">
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <div>
+                        <strong>Check your email</strong>
+                        <p>We've sent a confirmation to your email address</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <strong>We'll call you soon</strong>
+                        <p>Our counselor will reach out within 24 hours</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🎓</span>
+                    <div>
+                        <strong>Start your journey</strong>
+                        <p>Get ready to transform your career with us</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thankyou-actions">
+                <a href="index.html" class="back-btn primary">Back to Home</a>
+                <a href="index.html#courses" class="back-btn secondary">Browse Courses</a>
+            </div>
+            <p class="redirect-text">Redirecting to homepage in <span id="countdown">10</span> seconds...</p>
+        </div>
+    </div>
+
+    <script>
+        // Countdown redirect
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+
+        // Stop countdown if user clicks any link
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                clearInterval(countdownInterval);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodedgeAcademy - Master Coding Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-text">Codedge</span>
+                    <span class="logo-accent">Academy</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#features">Features</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Form -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="badge">🚀 New Batch Starting Soon</div>
+                    <h1 class="hero-title">
+                        Master <span class="gradient-text">Coding Skills</span><br>
+                        Build Your Future
+                    </h1>
+                    <p class="hero-description">
+                        Transform your career with industry-leading courses in Web Development, 
+                        Data Science, AI/ML, and more. Learn from experts and build real-world projects.
+                    </p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Live Interactive Classes</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Industry Projects</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Career Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h2>Start Your Journey</h2>
+                            <p>Get a free consultation & course details</p>
+                        </div>
+                        <form class="enrollment-form" data-form-id="hero-form">
+                            <div class="form-group">
+                                <label for="name-hero">Full Name</label>
+                                <input type="text" id="name-hero" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-hero">Email Address</label>
+                                <input type="email" id="email-hero" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-hero">Phone Number</label>
+                                <input type="tel" id="phone-hero" name="phone" required placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-group">
+                                <label for="course-hero">Interested Course</label>
+                                <select id="course-hero" name="course" required>
+                                    <option value="">Select a course</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="data-science">Data Science</option>
+                                    <option value="ai-ml">AI & Machine Learning</option>
+                                    <option value="mobile-dev">Mobile App Development</option>
+                                    <option value="devops">DevOps & Cloud</option>
+                                    <option value="fullstack">Full Stack Development</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Enroll Now</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <span class="spinner"></span> Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Expert Instructors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Placement Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Hiring Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Codedge Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="CodedgeAcademy Team" class="about-img">
+                    <div class="about-image-overlay">
+                        <div class="overlay-stat">
+                            <h3>5+ Years</h3>
+                            <p>Of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="gradient-text">CodedgeAcademy</span></h2>
+                    <p class="about-description">
+                        Founded in 2019, CodedgeAcademy has been at the forefront of tech education, 
+                        empowering thousands of students to achieve their career goals in technology. 
+                        We believe in hands-on learning, industry-relevant curriculum, and personalized mentorship.
+                    </p>
+                    <p class="about-description">
+                        Our mission is to bridge the gap between academic learning and industry requirements. 
+                        With experienced instructors from top tech companies and a proven track record of 
+                        95% placement rate, we're committed to your success.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">🎓</div>
+                            <div>
+                                <h4>Expert-Led Training</h4>
+                                <p>Learn from industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">💼</div>
+                            <div>
+                                <h4>Career-Focused</h4>
+                                <p>Job-ready skills & placement support</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">🌟</div>
+                            <div>
+                                <h4>Proven Results</h4>
+                                <p>10,000+ successful alumni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Courses</h2>
+                <p class="section-subtitle">Choose from our industry-relevant courses designed to make you job-ready</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=250&fit=crop" alt="Web Development">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Web Development</h3>
+                        <p class="course-description">Master HTML, CSS, JavaScript, React, and Node.js to build modern web applications</p>
+                        <div class="course-features">
+                            <span class="course-tag">6 Months</span>
+                            <span class="course-tag">Live Classes</span>
+                            <span class="course-tag">Projects</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data Science">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Data Science</h3>
+                        <p class="course-description">Learn Python, ML algorithms, data visualization, and analytics for data-driven decisions</p>
+                        <div class="course-features">
+                            <span class="course-tag">8 Months</span>
+                            <span class="course-tag">Live Classes</span>
+                            <span class="course-tag">Capstone</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop" alt="AI & Machine Learning">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <line x1="12" y1="2" x2="12" y2="9"></line>
+                                <line x1="12" y1="15" x2="12" y2="22"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">AI & Machine Learning</h3>
+                        <p class="course-description">Deep dive into AI, neural networks, NLP, and computer vision technologies</p>
+                        <div class="course-features">
+                            <span class="course-tag">10 Months</span>
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-tag">Research</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Mobile App Development">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Mobile App Development</h3>
+                        <p class="course-description">Build native iOS and Android apps using React Native and Flutter frameworks</p>
+                        <div class="course-features">
+                            <span class="course-tag">7 Months</span>
+                            <span class="course-tag">Hybrid Apps</span>
+                            <span class="course-tag">Portfolio</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=250&fit=crop" alt="DevOps & Cloud">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">DevOps & Cloud</h3>
+                        <p class="course-description">Master Docker, Kubernetes, AWS, Azure, and CI/CD pipelines for modern deployment</p>
+                        <div class="course-features">
+                            <span class="course-tag">5 Months</span>
+                            <span class="course-tag">Hands-on</span>
+                            <span class="course-tag">Certification</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Full Stack Development">
+                        <div class="course-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Full Stack Development</h3>
+                        <p class="course-description">Complete package: Frontend, Backend, Database, and deployment strategies</p>
+                        <div class="course-features">
+                            <span class="course-tag">9 Months</span>
+                            <span class="course-tag">Complete</span>
+                            <span class="course-tag">Job Ready</span>
+                        </div>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose CodedgeAcademy?</h2>
+                <p class="section-subtitle">We provide everything you need to succeed in your tech career</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-box-icon">💼</div>
+                    <h3>100% Placement Support</h3>
+                    <p>Dedicated placement cell with tie-ups with 500+ companies. Resume building, mock interviews, and job referrals</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box-icon">👨‍💻</div>
+                    <h3>Industry Expert Mentors</h3>
+                    <p>Learn from professionals working at top tech companies like Google, Microsoft, Amazon, and startups</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box-icon">🎯</div>
+                    <h3>Real-World Projects</h3>
+                    <p>Build 10+ industry-grade projects for your portfolio. Work on live client projects during your course</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box-icon">🔄</div>
+                    <h3>Lifetime Access</h3>
+                    <p>Get lifetime access to course materials, recordings, and future updates. Learn at your own pace</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box-icon">🏆</div>
+                    <h3>Industry Certifications</h3>
+                    <p>Earn certificates recognized by top companies. Get certified in AWS, Azure, Google Cloud, and more</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-box-icon">💬</div>
+                    <h3>24/7 Doubt Support</h3>
+                    <p>Get your doubts resolved anytime through our dedicated support team and community forum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Success Stories</h2>
+                <p class="section-subtitle">Hear from our students who transformed their careers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"CodedgeAcademy helped me transition from a non-tech background to landing a job at Microsoft. The mentors are amazing and the curriculum is industry-relevant."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div>
+                            <div class="author-name">Rahul Sharma</div>
+                            <div class="author-role">Software Engineer at Microsoft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The Data Science course is comprehensive and practical. I got placed in a leading analytics firm within 2 months of course completion. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div>
+                            <div class="author-name">Priya Kumar</div>
+                            <div class="author-role">Data Analyst at Accenture</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best investment I made in my career. The instructors are patient, knowledgeable, and the placement support is excellent. Got 3 job offers!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AV</div>
+                        <div>
+                            <div class="author-name">Amit Verma</div>
+                            <div class="author-role">Full Stack Developer at Flipkart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Career?</h2>
+                <p class="cta-description">Join 10,000+ students who have already started their journey with us</p>
+                <a href="#home" class="cta-btn">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Enrollment Form Section -->
+    <section class="bottom-form-section" id="enroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Enroll Now & Start Learning</h2>
+                <p class="section-subtitle">Take the first step towards your dream tech career</p>
+            </div>
+            <div class="bottom-form-wrapper">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>Get Started Today</h2>
+                        <p>Fill in your details and our team will contact you</p>
+                    </div>
+                    <form class="enrollment-form" data-form-id="bottom-form">
+                        <div class="form-group">
+                            <label for="name-bottom">Full Name</label>
+                            <input type="text" id="name-bottom" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-bottom">Email Address</label>
+                            <input type="email" id="email-bottom" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-bottom">Phone Number</label>
+                            <input type="tel" id="phone-bottom" name="phone" required placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-bottom">Interested Course</label>
+                            <select id="course-bottom" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                                <option value="mobile-dev">Mobile App Development</option>
+                                <option value="devops">DevOps & Cloud</option>
+                                <option value="fullstack">Full Stack Development</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Enroll Now</span>
+                            <span class="btn-loader" style="display: none;">
+                                <span class="spinner"></span> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Tech Park, Sector 5, New Delhi, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@codedgeacademy.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🕐</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2033465668983!2d77.36590931508053!3d28.626137982422744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzM0LjEiTiA3N8KwMjInMDUuNyJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">Codedge</span>
+                        <span class="logo-accent">Academy</span>
+                    </div>
+                    <p class="footer-description">Empowering future tech leaders with industry-relevant skills and practical knowledge</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📸</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses">All Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Success Stories</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                        <li><a href="#">DevOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new courses and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodedgeAcademy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            </div>
+            </footer>
+  
+             </div>
+        </footer>
+
+        <!-- ADD THE NEW SCRIPT HERE -->
+        <script>
+        // Handle both forms with a single, proper handler
+        document.querySelectorAll('.enrollment-form').forEach(form => {
+          form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Get the form ID to identify which form was submitted
+            const formId = this.getAttribute('data-form-id');
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = submitBtn.querySelector('.btn-loader');
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline-flex';
+            submitBtn.disabled = true;
+            
+            // Get form data based on which form was submitted
+            const nameId = formId === 'hero-form' ? 'name-hero' : 'name-bottom';
+            const emailId = formId === 'hero-form' ? 'email-hero' : 'email-bottom';
+            const phoneId = formId === 'hero-form' ? 'phone-hero' : 'phone-bottom';
+            const courseId = formId === 'hero-form' ? 'course-hero' : 'course-bottom';
+            
+            const name = document.getElementById(nameId).value;
+            const email = document.getElementById(emailId).value;
+            const phone = document.getElementById(phoneId).value;
+            const course = document.getElementById(courseId).value;
+            
+            try {
+              const response = await fetch('http://localhost:3000/api/enroll', {
+                method: 'POST',
+                headers: { 
+                  'Content-Type': 'application/json' 
+                },
+                body: JSON.stringify({ name, email, phone, course })
+              });
+              
+              const data = await response.json();
+              console.log('Server response:', data);
+              
+              if (data.success) {
+                alert('✅ Enrollment successful! Check your email.');
+                window.location.href = 'thankyou.html';
+              } else {
+                alert('❌ ' + (data.message || 'Enrollment failed'));
+                btnText.style.display = 'inline';
+                btnLoader.style.display = 'none';
+                submitBtn.disabled = false;
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              alert('❌ Failed to submit form. Please check if the server is running on http://localhost:3000');
+              btnText.style.display = 'inline';
+              btnLoader.style.display = 'none';
+              submitBtn.disabled = false;
+            }
+          });
+        });
+        </script>
+    </body>
+</html>
+
+            </body>
+            </html>
