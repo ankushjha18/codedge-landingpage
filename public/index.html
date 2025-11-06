@@ -586,63 +586,62 @@
         <!-- ADD THE NEW SCRIPT HERE -->
         <script>
         // Handle both forms with a single, proper handler
-document.querySelectorAll('.enrollment-form').forEach(form => {
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    // Get the form ID to identify which form was submitted
-    const formId = this.getAttribute('data-form-id');
-    const submitBtn = this.querySelector('.submit-btn');
-    const btnText = submitBtn.querySelector('.btn-text');
-    const btnLoader = submitBtn.querySelector('.btn-loader');
-    
-    // Show loading state
-    btnText.style.display = 'none';
-    btnLoader.style.display = 'inline-flex';
-    submitBtn.disabled = true;
-    
-    // Get form data based on which form was submitted
-    const nameId = formId === 'hero-form' ? 'name-hero' : 'name-bottom';
-    const emailId = formId === 'hero-form' ? 'email-hero' : 'email-bottom';
-    const phoneId = formId === 'hero-form' ? 'phone-hero' : 'phone-bottom';
-    const courseId = formId === 'hero-form' ? 'course-hero' : 'course-bottom';
-    
-    const name = document.getElementById(nameId).value;
-    const email = document.getElementById(emailId).value;
-    const phone = document.getElementById(phoneId).value;
-    const course = document.getElementById(courseId).value;
-    
-    try {
-      // FIXED: Use relative URL that works on both localhost and Vercel
-      const response = await fetch('/api/enroll', {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json' 
-        },
-        body: JSON.stringify({ name, email, phone, course })
-      });
-      
-      const data = await response.json();
-      console.log('Server response:', data);
-      
-      if (data.success) {
-        alert('✅ Enrollment successful! Check your email.');
-        window.location.href = 'thankyou.html';
-      } else {
-        alert('❌ ' + (data.message || 'Enrollment failed'));
-        btnText.style.display = 'inline';
-        btnLoader.style.display = 'none';
-        submitBtn.disabled = false;
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('❌ Failed to submit form. Please try again.');
-      btnText.style.display = 'inline';
-      btnLoader.style.display = 'none';
-      submitBtn.disabled = false;
-    }
-  });
-});
+        document.querySelectorAll('.enrollment-form').forEach(form => {
+          form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Get the form ID to identify which form was submitted
+            const formId = this.getAttribute('data-form-id');
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = submitBtn.querySelector('.btn-loader');
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline-flex';
+            submitBtn.disabled = true;
+            
+            // Get form data based on which form was submitted
+            const nameId = formId === 'hero-form' ? 'name-hero' : 'name-bottom';
+            const emailId = formId === 'hero-form' ? 'email-hero' : 'email-bottom';
+            const phoneId = formId === 'hero-form' ? 'phone-hero' : 'phone-bottom';
+            const courseId = formId === 'hero-form' ? 'course-hero' : 'course-bottom';
+            
+            const name = document.getElementById(nameId).value;
+            const email = document.getElementById(emailId).value;
+            const phone = document.getElementById(phoneId).value;
+            const course = document.getElementById(courseId).value;
+            
+            try {
+              const response = await fetch('http://localhost:3000/api/enroll', {
+                method: 'POST',
+                headers: { 
+                  'Content-Type': 'application/json' 
+                },
+                body: JSON.stringify({ name, email, phone, course })
+              });
+              
+              const data = await response.json();
+              console.log('Server response:', data);
+              
+              if (data.success) {
+                alert('✅ Enrollment successful! Check your email.');
+                window.location.href = 'thankyou.html';
+              } else {
+                alert('❌ ' + (data.message || 'Enrollment failed'));
+                btnText.style.display = 'inline';
+                btnLoader.style.display = 'none';
+                submitBtn.disabled = false;
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              alert('❌ Failed to submit form. Please check if the server is running on http://localhost:3000');
+              btnText.style.display = 'inline';
+              btnLoader.style.display = 'none';
+              submitBtn.disabled = false;
+            }
+          });
+        });
         </script>
     </body>
 </html>
